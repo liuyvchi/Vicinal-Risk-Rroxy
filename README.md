@@ -73,8 +73,6 @@ To utilize the provided scripts effectively, please organize your data according
 
 To compute model risk estimation under different setups, run the following commands:
 
-To execute model risk estimation under different setups, we can run the following commands:
-
 - :wrench: ImageNet setup:
 ```bash
 python src/test_mentric.py
