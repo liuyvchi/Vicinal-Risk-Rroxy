@@ -10,6 +10,11 @@ This repository contains the implementation for the paper "Assessing Model Gener
 
 ---
 
+
+## Abstract
+This paper evaluates the generalization ability of classification models on out-of-distribution test sets without depending on ground truth labels. Common approaches often calculate an unsupervised metric related to a specific model property, like confidence or invariance, which correlates with out-of-distribution accuracy. However, these metrics are typically computed for each test sample individually, leading to potential issues caused by spurious model responses, such as overly high or low confidence. To tackle this challenge, we propose incorporating responses from neighboring test samples into the correctness assessment of each individual sample. In essence, if a model consistently demonstrates high correctness scores for nearby samples, it increases the likelihood of correctly predicting the target sample, and vice versa. The resulting scores are then averaged across all test samples to provide a holistic indication of model accuracy. Developed under the vicinal risk formulation, this approach, named vicinal risk proxy (VRP), computes accuracy without relying on labels. We show that applying the VRP method to existing generalization indicators, such as average confidence and effective invariance, consistently improves over these baselines both methodologically and experimentally. This yields a stronger correlation with model accuracy, especially on challenging out-of-distribution test sets.
+
+
 ## Preparation
 
 
