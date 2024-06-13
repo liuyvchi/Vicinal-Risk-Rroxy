@@ -24,9 +24,7 @@ pip install -r requirements.txt
 
 #### :wrench:  Downlaod Models
 
-Models for 
-Models for Cifar10
-Model for 
+Please check the Experimental Setup section in our paper.
 
 #### :wrench:  Feature extractiion
 
@@ -52,25 +50,28 @@ To utilize the provided scripts effectively, please organize your data according
 │   ├── ImageNet-Val
 │   ├── ImageNet-A
 │   ├── ImageNet-R
-│   ├── ImageNet-S
-│   ├── ObjectNet
 │   └── ...
 └── modelOutput
     ├── imagenet_a_out_colorjitter
-    │   └── tv_reesnet152.npy
+    |   ├── tv_reesnet152.npy
+    │   └── ...
+    |    
     ├── imagenet_a_out_grey
     ├── imagenet_a_out_colorjitter
     └── ...
 |── iwildcam_weights
+|── ...
 └── src
 ```
 
 
 ---
 
+## Test
 
 ## Compute Model Risks Proxies
 
+To compute model risk estimation under different setups, run the following commands:
 
 To execute model risk estimation under different setups, we can run the following commands:
 
@@ -79,35 +80,38 @@ To execute model risk estimation under different setups, we can run the followin
 python src/test_mentric.py
 ```
 
-- :wrench: Cifar10 setup:
+- Cifar10 setup:
 ```bash
-python src/test_mentric_cifar.py
+python src/test_metric_cifar.py
 ```
 
-- :wrench: Cifar10 setup:
+- iWildCam setup:
 ```bash
-python src/test_mentric_iWilds.py
+python src/test_metric_iwilds.py
 ```
 
+### :wrench: Evaluation
 
+You can compute the correlation between the estimated model risks and their accuracy by running the following command:
+
+```bash
+python src/compute_correlation.py
+```
 
 ---
 
 ## Citation
+
 If you find our code helpful, please consider citing our paper:
 
 ```bibtex
-@misc{liu2024hierarchical,
-      title={Towards Hierarchical Multi-Agent Workflows for Zero-Shot Prompt Optimization}, 
-      author={Yuchi Liu and Jaskirat Singh and Gaowen Liu and Ali Payani and Liang Zheng},
-      year={2024},
-      eprint={2405.20252},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
+
 ```
 
 ## License
 
 This project is open source and available under the [MIT License](LICENSE.md).
 
+---
+
+Let me know if there's anything else you need!
