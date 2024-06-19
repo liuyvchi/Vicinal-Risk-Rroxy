@@ -113,6 +113,12 @@ python src/compute_correlation.py
 If you find our code helpful, please consider citing our paper:
 
 ```bibtex
+@article{liu2024assessing,
+  title={Assessing Model Generalization in Vicinity},
+  author={Liu, Yuchi and Sun, Yifan and Wang, Jingdong and Zheng, Liang},
+  journal={arXiv preprint arXiv:2406.09257},
+  year={2024}
+}
 
 ```
 
