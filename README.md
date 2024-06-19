@@ -2,6 +2,11 @@
 
  [Yuchi Liu](https://liuyvchi.github.io/), [Yifan Sun](https://yifansun-reid.github.io/), [Jingdong Wang](https://jingdongwang2017.github.io/), [Liang Zheng](https://zheng-lab.cecs.anu.edu.au)
 
+
+<a href="https://arxiv.org/pdf/2406.09257"><img src="https://img.shields.io/badge/Paper-arXiv-red?style=for-the-badge" height=22.5></a>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 This repository contains the implementation for the paper "Assessing Model Generalization in Vicinity".
 
 
